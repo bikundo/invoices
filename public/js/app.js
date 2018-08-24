@@ -14015,6 +14015,8 @@ window.Vue = __webpack_require__(37);
 Vue.component('sidebar-component', __webpack_require__(53));
 Vue.component('navbar-component', __webpack_require__(56));
 Vue.component('footer-component', __webpack_require__(58));
+Vue.component('home-component', __webpack_require__(62));
+Vue.component('invoices-component', __webpack_require__(64));
 
 var app = new Vue({
   el: '#app'
@@ -47929,6 +47931,428 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-2d71d82d", module.exports)
+  }
+}
+
+/***/ }),
+/* 60 */,
+/* 61 */,
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(11)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(63)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/dashboard/Home.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0c560f1e", Component.options)
+  } else {
+    hotAPI.reload("data-v-0c560f1e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "main-content-container container-fluid px-4" },
+      [
+        _c("div", { staticClass: "page-header row no-gutters py-4" }, [
+          _c(
+            "div",
+            { staticClass: "col-12 col-sm-4 text-center text-sm-left mb-0" },
+            [
+              _c("span", { staticClass: "text-uppercase page-subtitle" }, [
+                _vm._v("Dashboard")
+              ]),
+              _vm._v(" "),
+              _c("h3", { staticClass: "page-title" }, [_vm._v("Overview")])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg col-md-6 col-sm-6 mb-4" }, [
+            _c(
+              "div",
+              { staticClass: "stats-small stats-small--1 card card-small" },
+              [
+                _c("div", { staticClass: "card-body p-0 d-flex" }, [
+                  _c("div", { staticClass: "d-flex flex-column m-auto" }, [
+                    _c(
+                      "div",
+                      { staticClass: "stats-small__data text-center" },
+                      [
+                        _c(
+                          "span",
+                          { staticClass: "stats-small__label text-uppercase" },
+                          [_vm._v("Posts")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h6",
+                          { staticClass: "stats-small__value count my-3" },
+                          [_vm._v("2,390")]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stats-small__data" }, [
+                      _c(
+                        "span",
+                        {
+                          staticClass:
+                            "stats-small__percentage stats-small__percentage--increase"
+                        },
+                        [_vm._v("4.7%")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("canvas", {
+                    staticClass: "blog-overview-stats-small-1",
+                    attrs: { height: "120" }
+                  })
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg col-md-6 col-sm-6 mb-4" }, [
+            _c(
+              "div",
+              { staticClass: "stats-small stats-small--1 card card-small" },
+              [
+                _c("div", { staticClass: "card-body p-0 d-flex" }, [
+                  _c("div", { staticClass: "d-flex flex-column m-auto" }, [
+                    _c(
+                      "div",
+                      { staticClass: "stats-small__data text-center" },
+                      [
+                        _c(
+                          "span",
+                          { staticClass: "stats-small__label text-uppercase" },
+                          [_vm._v("Pages")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h6",
+                          { staticClass: "stats-small__value count my-3" },
+                          [_vm._v("182")]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stats-small__data" }, [
+                      _c(
+                        "span",
+                        {
+                          staticClass:
+                            "stats-small__percentage stats-small__percentage--increase"
+                        },
+                        [_vm._v("12.4%")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("canvas", {
+                    staticClass: "blog-overview-stats-small-2",
+                    attrs: { height: "120" }
+                  })
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg col-md-4 col-sm-6 mb-4" }, [
+            _c(
+              "div",
+              { staticClass: "stats-small stats-small--1 card card-small" },
+              [
+                _c("div", { staticClass: "card-body p-0 d-flex" }, [
+                  _c("div", { staticClass: "d-flex flex-column m-auto" }, [
+                    _c(
+                      "div",
+                      { staticClass: "stats-small__data text-center" },
+                      [
+                        _c(
+                          "span",
+                          { staticClass: "stats-small__label text-uppercase" },
+                          [_vm._v("Comments")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h6",
+                          { staticClass: "stats-small__value count my-3" },
+                          [_vm._v("8,147")]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stats-small__data" }, [
+                      _c(
+                        "span",
+                        {
+                          staticClass:
+                            "stats-small__percentage stats-small__percentage--decrease"
+                        },
+                        [_vm._v("3.8%")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("canvas", {
+                    staticClass: "blog-overview-stats-small-3",
+                    attrs: { height: "120" }
+                  })
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg col-md-4 col-sm-6 mb-4" }, [
+            _c(
+              "div",
+              { staticClass: "stats-small stats-small--1 card card-small" },
+              [
+                _c("div", { staticClass: "card-body p-0 d-flex" }, [
+                  _c("div", { staticClass: "d-flex flex-column m-auto" }, [
+                    _c(
+                      "div",
+                      { staticClass: "stats-small__data text-center" },
+                      [
+                        _c(
+                          "span",
+                          { staticClass: "stats-small__label text-uppercase" },
+                          [_vm._v("Users")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h6",
+                          { staticClass: "stats-small__value count my-3" },
+                          [_vm._v("2,413")]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stats-small__data" }, [
+                      _c(
+                        "span",
+                        {
+                          staticClass:
+                            "stats-small__percentage stats-small__percentage--increase"
+                        },
+                        [_vm._v("12.4%")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("canvas", {
+                    staticClass: "blog-overview-stats-small-4",
+                    attrs: { height: "120" }
+                  })
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg col-md-4 col-sm-12 mb-4" }, [
+            _c(
+              "div",
+              { staticClass: "stats-small stats-small--1 card card-small" },
+              [
+                _c("div", { staticClass: "card-body p-0 d-flex" }, [
+                  _c("div", { staticClass: "d-flex flex-column m-auto" }, [
+                    _c(
+                      "div",
+                      { staticClass: "stats-small__data text-center" },
+                      [
+                        _c(
+                          "span",
+                          { staticClass: "stats-small__label text-uppercase" },
+                          [_vm._v("Subscribers")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "h6",
+                          { staticClass: "stats-small__value count my-3" },
+                          [_vm._v("17,281")]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stats-small__data" }, [
+                      _c(
+                        "span",
+                        {
+                          staticClass:
+                            "stats-small__percentage stats-small__percentage--decrease"
+                        },
+                        [_vm._v("2.4%")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("canvas", {
+                    staticClass: "blog-overview-stats-small-5",
+                    attrs: { height: "120" }
+                  })
+                ])
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-12 col-md-12 col-sm-12 mb-4" }, [
+            _c("div", { staticClass: "card card-small" }, [
+              _c("div", { staticClass: "card-header border-bottom" }, [
+                _c("h6", { staticClass: "m-0" }, [_vm._v("Users")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body pt-0" }, [
+                _c("canvas", {
+                  staticClass: "blog-overview-users",
+                  staticStyle: { "max-width": "100% !important" },
+                  attrs: { height: "130" }
+                })
+              ])
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-0c560f1e", module.exports)
+  }
+}
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(11)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(65)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/dashboard/Invoices.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5a3cfdf8", Component.options)
+  } else {
+    hotAPI.reload("data-v-5a3cfdf8", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ol", [
+      _c("li", [_vm._v("invoice 1")]),
+      _vm._v(" "),
+      _c("li", [_vm._v("invoice 2")])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-5a3cfdf8", module.exports)
   }
 }
 

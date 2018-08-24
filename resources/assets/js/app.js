@@ -18,6 +18,8 @@ window.Vue = require('vue');
 Vue.component('sidebar-component', require('./components/snippets/SideBar.vue'));
 Vue.component('navbar-component', require('./components/snippets/NavBar.vue'));
 Vue.component('footer-component', require('./components/snippets/Footer.vue'));
+Vue.component('home-component', require('./components/dashboard/Home.vue'));
+Vue.component('invoices-component', require('./components/dashboard/Invoices.vue'));
 
 const app = new Vue({
     el: '#app'
