@@ -13,10 +13,6 @@ class InvoiceTransformer extends TransformerAbstract
      */
     public function transform(Invoice $item)
     {
-        return [
-            'id'         => (int)$item->id,
-            'created_at' => (string)$item->created_at,
-            'updated_at' => (string)$item->updated_at,
-        ];
+        return $item->toArray();
     }
 }
