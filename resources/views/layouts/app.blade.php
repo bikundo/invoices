@@ -24,9 +24,9 @@
 <body>
 <div class="container-fluid" id="app">
     <div class="row">
-        @include('snippets.sidebar')
+        <sidebar-component></sidebar-component>
         <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
-            @include('snippets.navbar')
+            <navbar-component></navbar-component>
             @yield('content')
             @include('snippets.footer')
         </main>

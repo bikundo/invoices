@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<template>
     <div class="main-content-container container-fluid px-4">
         <!-- Page Header -->
         <div class="page-header row no-gutters py-4">
@@ -107,7 +105,6 @@
                 </div>
             </div>
             <!-- End Users Stats -->
-             </div>
+        </div>
     </div>
-
-@endsection
+</template>
